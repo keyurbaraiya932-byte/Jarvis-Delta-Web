@@ -1,0 +1,1 @@
+fetch('/api/status').then(r=>r.json()).then(x=>{document.getElementById('status').textContent=x.ok?'ONLINE • Real Trading OFF':'ERROR'}).catch(()=>{document.getElementById('status').textContent='OFFLINE'});
